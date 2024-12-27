@@ -1,0 +1,46 @@
+
+<div class="login-container">
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo" class="logo" />
+  </div>
+
+  <form class="login-form">
+    <span class="login-form-title"> Authentification </span>
+    <a class="goToHome" (click)="onHomeClick()"> Accueil? </a>
+    <br />
+
+    <div class="input-container">
+      <div>
+        <label class="label" for="matricule">Matricule</label>
+      </div>
+      <input
+        type="text"
+        id="matricule"
+        name="matricule"
+        formControlName="matricule"
+        placeholder="Entrez votre matricule"
+        required
+      />
+    </div>
+
+    <div class="input-container">
+      <div class="pwd">
+        <label class="label" for="password">Mot de passe</label>
+        <a class="forgot-password" (click)="onForgotPasswordClick()"> Oublié? </a>
+      </div>
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        formControlName="password"
+        placeholder="Entrez votre mot de passe"
+        required
+      />
+    </div>
+    <br />
+
+    <button class="login-btn" type="submit">Connexion</button>
+  </form>
+
+</div>
