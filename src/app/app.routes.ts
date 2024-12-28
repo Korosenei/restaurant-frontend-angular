@@ -16,8 +16,8 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'pwd-forgeted', component: PwdForgetedComponent },
   { path: 'home', component: LandingComponent },
-  { path: 'header', component: HeaderComponent },
+  /* { path: 'header', component: HeaderComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'body', component: BodyComponent },
-  { path: 'footer', component: FooterComponent },
+  { path: 'footer', component: FooterComponent }, */
 ];
