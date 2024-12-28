@@ -3,12 +3,12 @@ import { NavbarComponent } from "../home/navbar/navbar.component";
 import { FooterComponent } from "../home/footer/footer.component";
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-menu',
   standalone: true,
   imports: [NavbarComponent, FooterComponent],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  templateUrl: './menu.component.html',
+  styleUrl: './menu.component.scss'
 })
-export class AboutComponent {
+export class MenuComponent {
 
 }
