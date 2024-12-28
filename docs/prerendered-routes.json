@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/body",
+    "/footer",
+    "/header",
+    "/home",
+    "/login",
+    "/navbar",
+    "/pwd-forgeted"
+  ]
+}
