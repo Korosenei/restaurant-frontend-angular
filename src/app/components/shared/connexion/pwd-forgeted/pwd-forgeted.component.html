@@ -1,42 +1,59 @@
-<div class="login-container">
-  <div class="logo-container">
-    <img src="logo.png" alt="Logo" class="logo" />
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="login-form-title">Recuperation</span>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="Close()"
+      ></button>
+    </div>
+    <br>
+
+    <form action="" class="login-form">
+      <div class="modal-body">
+        <div class="input-container">
+          <div>
+            <label class="label" for="matricule">Matricule</label>
+          </div>
+          <input
+            type="text"
+            id="matricule"
+            name="matricule"
+            formControlName="matricule"
+            placeholder="Entrez votre matricule"
+            required
+          />
+        </div>
+
+        <div class="input-container">
+          <div class="pwd">
+            <label class="label" for="email">Email</label>
+            <a
+              routerLink="/login"
+              class="forgot-password"
+              (click)="onConnexionClick()"
+            >
+              Connexion?
+            </a>
+          </div>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            formControlName="email"
+            placeholder="Entrez votre adresse email"
+            required
+          />
+        </div>
+        <br />
+      </div>
+
+      <div class="modal-footer">
+        <button class="send-btn" type="submit">Envoyer</button>
+      </div>
+    </form>
   </div>
-
-  <form class="login-form" >
-    <span class="login-form-title"> Recuperation </span>
-    <a class="goToHome" (click)="onHomeClick()"> Accueil? </a>
-    <br />
-
-    <div class="input-container">
-      <div>
-        <label class="label" for="matricule">Matricule</label>
-      </div>
-      <input
-        type="text"
-        id="matricule"
-        name="matricule"
-        placeholder="Entrez votre matricule"
-        required
-      />
-    </div>
-
-    <div class="input-container">
-      <div class="email">
-        <label class="label" for="email">Email</label>
-        <a class="connexion" (click)="onConnexionClick()"> connexion? </a>
-      </div>
-
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Entrez votre adresse email"
-        required
-      />
-    </div>
-    <br />
-
-    <button class="login-btn" type="submit">Envoyer</button>
-  </form>
 </div>

@@ -1,14 +1,3 @@
-:host {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #C9FDD5;
-  background-size: cover;
-  font-family: 'Arial', sans-serif;
-}
-
 .login-container {
   background-color: #ffffff;
   border-radius: 20px;
@@ -89,7 +78,7 @@
   font-size: 16px;
 }
 
-.connexion, .goToHome{
+.forgot-password {
   font-family: Poppins-Regular;
   font-size: 14px;
   color: #ff4d4d;
@@ -115,8 +104,8 @@
   box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
 }
 
-button {
-  width: 100%;
+.send-btn {
+  width: 50%;
   padding: 12px;
   border: none;
   border-radius: 5px;
@@ -128,12 +117,12 @@ button {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
+.login-btn:hover {
   background-color: #218838;
   transform: scale(1.05);
 }
 
-.connexion:hover, .goToHome:hover{
+.forgot-password:hover {
   color: #218838;
   cursor: pointer;
 }
@@ -143,3 +132,17 @@ button:hover {
 
 
 
+::ng-deep .toast-top-right {
+  top: 50px;
+  right: 50px;
+}
+
+::ng-deep .toast-success {
+  background-color: #28a745 !important;
+  color: white !important;
+}
+
+::ng-deep .toast-error {
+  background-color: #dc3545 !important;
+  color: white !important;
+}
